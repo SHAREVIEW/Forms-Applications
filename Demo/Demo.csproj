@@ -1,0 +1,411 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{31CA8455-E8A5-47BA-8002-D2283176747D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Demo</RootNamespace>
+    <AssemblyName>Demo</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\Any CPU\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\Any CPU\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\x64\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\Release\x64\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\x86\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\Release\x86\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClientServerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientServerForm.Designer.cs">
+      <DependentUpon>ClientServerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Demo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Demo.Designer.cs">
+      <DependentUpon>Demo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DnsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DnsForm.Designer.cs">
+      <DependentUpon>DnsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FtpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FtpForm.Designer.cs">
+      <DependentUpon>FtpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HttpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HttpForm.Designer.cs">
+      <DependentUpon>HttpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HttpPostForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HttpPostForm.Designer.cs">
+      <DependentUpon>HttpPostForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IcmpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IcmpForm.Designer.cs">
+      <DependentUpon>IcmpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IPtoCountryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IPtoCountryForm.Designer.cs">
+      <DependentUpon>IPtoCountryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LicensingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LicensingForm.Designer.cs">
+      <DependentUpon>LicensingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LicensingSerialForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LicensingSerialForm.Designer.cs">
+      <DependentUpon>LicensingSerialForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NtpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NtpForm.Designer.cs">
+      <DependentUpon>NtpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ClientServerForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ClientServerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Demo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Demo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DnsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DnsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FtpForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FtpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HttpForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HttpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HttpPostForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HttpPostForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IcmpForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>IcmpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IPtoCountryForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>IPtoCountryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LicensingForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LicensingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LicensingSerialForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LicensingSerialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NtpForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NtpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RadiusForm.resx">
+      <DependentUpon>RadiusForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RshForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RshForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScpForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ScpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFtpForm.resx">
+      <DependentUpon>SFtpForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SnmpAuthenticationForm.resx">
+      <DependentUpon>SnmpAuthenticationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SnmpForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SnmpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SnmpMIBForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SnmpMIBForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SnmpTrapForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SnmpTrapForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SnmpTrapFormAdvanced.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SnmpTrapFormAdvanced.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SshForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SshForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelnetForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TelnetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TftpForm.resx">
+      <DependentUpon>TftpForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraceRouteForm.resx">
+      <DependentUpon>TraceRouteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UdpForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UdpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VERDEForm.resx">
+      <DependentUpon>VERDEForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VMwareForm.resx">
+      <DependentUpon>VMwareForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WolForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WolForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XenForm.resx">
+      <DependentUpon>XenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RadiusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RadiusForm.Designer.cs">
+      <DependentUpon>RadiusForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RshForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RshForm.Designer.cs">
+      <DependentUpon>RshForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScpForm.Designer.cs">
+      <DependentUpon>ScpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFtpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFtpForm.designer.cs">
+      <DependentUpon>SFtpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SnmpAuthenticationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SnmpAuthenticationForm.Designer.cs">
+      <DependentUpon>SnmpAuthenticationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SnmpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SnmpForm.Designer.cs">
+      <DependentUpon>SnmpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SnmpMIBForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SnmpMIBForm.Designer.cs">
+      <DependentUpon>SnmpMIBForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SnmpTrapForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SnmpTrapForm.Designer.cs">
+      <DependentUpon>SnmpTrapForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SnmpTrapFormAdvanced.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SnmpTrapFormAdvanced.Designer.cs">
+      <DependentUpon>SnmpTrapFormAdvanced.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SshForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SshForm.Designer.cs">
+      <DependentUpon>SshForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelnetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelnetForm.Designer.cs">
+      <DependentUpon>TelnetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TftpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TftpForm.designer.cs">
+      <DependentUpon>TftpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraceRouteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraceRouteForm.Designer.cs">
+      <DependentUpon>TraceRouteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UdpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UdpForm.Designer.cs">
+      <DependentUpon>UdpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VERDEForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VERDEForm.Designer.cs">
+      <DependentUpon>VERDEForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VMwareForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VMwareForm.Designer.cs">
+      <DependentUpon>VMwareForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WolForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WolForm.Designer.cs">
+      <DependentUpon>WolForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XenForm.Designer.cs">
+      <DependentUpon>XenForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxNetwork">
+      <Guid>{B52B14BA-244B-4006-86E0-2923CB69D881}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
